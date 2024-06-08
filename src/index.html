@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header" class="container headerContainer">
+        <div id="site"><a href="javascript:void(0)"> VENIA</a></div>
+        <div id="headerOptions" class="navbar">
+          <a href="javascript:void(0)"> Home </a>
+          <a href="javascript:void(0)"> Women </a>
+          <a href="javascript:void(0)"> Men </a>
+          <a href="javascript:void(0)"> Smart Gear </a>
+          <a href="javascript:void(0)"> Accessories </a>
+        </div>
+        <div id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="searchItems"
+            placeholder="Search a Product"
+          />
+        </div>
+          <div class="cart-container">
+            <i class="fa-solid fa-bag-shopping" id="shoppingBag"></i>
+            <div class="cart-number-container">10</div>
+          </div>
+      </div>
+    </header>
+
+    <div role="banner" class="banner-container">
+      <div class="card banner-text">
+        <h2>
+          Men's 
+          Outerwear
+        </h2>
+      </div>
+      <div class="card image-card">
+        <img src="img/image.png" alt="Men's Outerwear" />
+      </div>
+    </div>
+
+    <main>
+      <div class="container-index">
+        <ul class="breadcrumb">
+            <li><a href="javascript:void(0)">Clothing</a></li>
+            <li><a href="javascript:void(0)">Womens</a></li>
+            <li>Outerwear</li>
+          </ul>
+
+        <div id="total"></div>
+        <div class="sort">
+          <select name="sortItems" id="sortItems">
+            <option value="">Sort By</option>
+            <option value="low">Price - Low to High</option>
+            <option value="high">Price - High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="filterItems">
+          <h3>Filters</h3>
+          <hr class="hline"/>
+          <h4>Categories</h4>
+          <div class="categories">
+            <input type="checkbox" class="category" value="jewelery"/>
+            <label>Jewelery</label><br />
+            <input type="checkbox" class="category"  value="electronics"/>
+            <label>Electronics</label><br />
+            <input type="checkbox" class="category" value="men's clothing"/>
+            <label> Men's Clothing</label><br />
+            <input type="checkbox" class="category" value="women's clothing"/>
+            <label> Women's Clothing</label><br/><br/>
+          </div>
+          <hr class="hline"/>
+        </div>
+
+        <div class="products">
+        </div>
+      </div>
+      
+      <button role="button" id="load-more">Load More</button>
+      <button id="scrollTopBtn" title="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+      <div class="pagination" id="pagination"> 
+        <a href="javascript:void(0)" id="prev">Previous</a> 
+        <a href="javascript:void(0)"class="page-link" data-page="1">1</a> 
+        <a href="javascript:void(0)" class="page-link" data-page="2">2</a> 
+        <a href="javascript:void(0)" class="page-link" data-page="3">3</a> 
+        <a href="javascript:void(0)" id="next">Next</a> 
+    </div> 
+      
+    </main>
+    
+     <hr>
+    <footer>
+      <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Account</h1>
+                <ul class="fList">
+                    <li class="fListItem">Sign In</li>
+                    <li class="fListItem">Register</li>
+                    <li class="fListItem">Order Status</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+              <h1 class="fMenuTitle">About Us</h1>
+              <ul class="fList">
+                  <li class="fListItem">Our Story</li>
+                  <li class="fListItem">Careers</li>
+              </ul>
+          </div>
+          <div class="footerMenu">
+              <h1 class="fMenuTitle">Help</h1>
+              <ul class="fList">
+                  <li class="fListItem">Contact Us</li>
+                  <li class="fListItem">Order Status</li>
+                  <li class="fListItem">Returns</li>
+              </ul>
+          </div>
+          <div class="footerMenu">
+              <h1 class="fMenuTitle">Follow Us!</h1>
+              <p>
+                Lorem Ipsum dolor sit amet, <br>
+                consectetur adipiscing elit
+              </p>
+              <br/>
+              <div class="fIcons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="footerRight">
+          <div class="footerRightText fMenuTitle">
+            <span>Venia</span>
+        </div>
+          <div class="footerRightMenu">
+              <span class="copyright">@Copyright Name Address Ave City Name State ZIP.</span>
+          </div>
+          
+      </div>
+  </footer>
+
+    <script type="module" src="js/service/fetchResults.js"></script>
+    <script type="module" src="js/search.js"></script>
+    <script type="module" src="js/sort.js"></script>
+    <script type="module" src="js/app.js"></script>
+    
+  </body>
+</html>
